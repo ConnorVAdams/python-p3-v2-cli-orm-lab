@@ -104,7 +104,7 @@ class Employee:
             WHERE id = ?
         """
         CURSOR.execute(sql, (self.name, self.job_title,
-                             self.department_id, self.id))
+                            self.department_id, self.id))
         CONN.commit()
 
     def delete(self):
